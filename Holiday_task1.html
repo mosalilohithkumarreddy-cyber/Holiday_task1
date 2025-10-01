@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holiday_task1</title>
+
+    <!-- Internal CSS starts here -->
+    <style>
+        /* -----------------------------
+           1. What is CSS?
+           --------------------------------
+           CSS (Cascading Style Sheets) is used 
+           to style HTML elements (colors, 
+           fonts, layouts, spacing, etc.)
+        */
+
+        /* -----------------------------
+           2. Types of CSS
+           --------------------------------
+           1) Inline CSS   → Written inside the element using "style" attribute
+           2) Internal CSS → Written inside <style> tag in <head> section (used here)
+           3) External CSS → Written in a separate .css file and linked with <link>
+        */
+
+        /* -----------------------------
+           3. Syntax of CSS
+           --------------------------------
+           selector {
+              property: value;
+           }
+        */
+
+        /* -----------------------------
+           4. CSS Selectors
+           -------------------------------- */
+
+        /* element selector */
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        /* class selector (use with .classname) */
+        .class-example {
+            font-size: 20px;
+            font-style: italic;
+            color: blue;
+        }
+
+        /* id selector (use with #idname) */
+        #id-example {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        /* universal selector (selects all elements) */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* group selector (apply same style to multiple elements) */
+        h2, p {
+            margin: 10px;
+        }
+
+        /* -----------------------------
+           5. Colors in CSS
+           --------------------------------
+           Ways to define colors:
+           - By Name (e.g., red, blue, green)
+           - By HEX (#RRGGBB → e.g., #ff5733)
+           - By RGB (rgb(R,G,B) → e.g., rgb(255,87,51))
+        */
+        .color-name {
+            color: red; /* using color name */
+        }
+
+        .color-hex {
+            color: #ff5733; /* using hex code */
+        }
+
+        .color-rgb {
+            color: rgb(0, 128, 255); /* using RGB */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Cascade Style Sheet Practice</h1>
+
+    <p class="class-example">This is styled with a class selector.</p>
+
+    <div id="id-example">This is styled with an ID selector.</div>
+
+    <h2 class="color-name">This text uses a color name (red).</h2>
+    <h2 class="color-hex">This text uses a HEX color (#ff5733).</h2>
+    <h2 class="color-rgb">This text uses an RGB color (0,128,255).</h2>
+
+</body>
+</html>
